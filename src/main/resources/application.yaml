@@ -2,9 +2,9 @@ spring:
   application:
     name: gatekeeper
   datasource:
-    url: jdbc:mysql://localhost:3306/gatekeeper?useSSL=false&serverTimezone=UTC
-    username: root
-    password: Sachin@123
+    url: ${MYSQL_URL}
+    username: ${MYSQL_USERNAME}
+    password: ${MYSQL_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
